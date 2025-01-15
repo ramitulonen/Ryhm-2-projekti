@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "insert.css">
+</head>
+<body>
+    <div class = "data">
+        <form method = "POST" action = "insert.php" onsubmit = "submitForm(event)">
+            <div>
+                <label for = "name">Name:</label>
+                <input type = "text" id = "name" name = "name" class = "texts" required>
+            </div>
+            <div>
+                <label for = "surname">Surname:</label>
+                <input type = "text" id = "surname" name = "surname" class = "texts" required>
+            </div>
+            <div>
+                <label for = "age">Age:</label>
+                <input type = "text" id = "age" name = "age" class = "texts" required>
+            </div>
+            <div>
+                <input type = "submit" value = "Save information to the database">
+            </div>
+        </form>
+        <label id = "information"></label>
+    </div>
+    <script src = "insert.js"></script>
+</body>
+</html>
