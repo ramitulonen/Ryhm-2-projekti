@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "demouser";
-$password = "root";
+$username = "put your username here";
+$password = "put your password here";
 
 try {
     $yhteys = new PDO("mysql:host=$servername;dbname=$username", $username, $password);
