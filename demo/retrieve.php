@@ -1,7 +1,7 @@
 <?php
 include("yhteys.php");
 $offset = isset($_GET['offset']) ? (int)$_GET['offset'] : 0; // Default to 0 if no offset is provided
-$size = isset($_GET['size']) ? (int)$_GET['size'] : 150; // Default to 0 if no offset is provided
+$size = isset($_GET['size']) ? (int)$_GET['size'] : 150; // Default to 0 if no size is provided
 
 $sql_lause = "SELECT * FROM data LIMIT :offset, :limit";
 
